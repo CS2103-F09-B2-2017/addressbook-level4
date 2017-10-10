@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<touristbook>
+    <place>
+        <name>Marina Bay Sands</name>
+        <address>10 Bayfront Avenue, Singapore 018956</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Singapore Flyer</name>
+        <address>30 Raffles Ave, Singapore 039803</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Gardens by the Bay</name>
+        <address>18 Marina Gardens Drive, Singapore 018953</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Singapore Botanic Gardens</name>
+        <address>1 Cluny Rd, Singapore 259569</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Singapore Zoo</name>
+        <address>80 Mandai Lake Rd, Singapore 729826</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Universal Studios Singapore</name>
+        <address>8 Sentosa Gateway, 098269</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Jurong Bird Park</name>
+        <address>2 Jurong Hill, Singapore 628925</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>ArtScience Museum</name>
+        <address>6 Bayfront Ave, Singapore 018974</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Fort Canning</name>
+        <address>River Valley Rd, Singapore 179037</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Science Centre Singapore</name>
+        <address>15 Science Centre Rd, Singapore 609081</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Night Safari Singapore</name>
+        <address>80 Mandai Lake Rd, Singapore 729826</address>
+        <tagged>attractions</tagged>
+    </place>
+    <place>
+        <name>Alma by Juan Amador</name>
+        <address>22 Scotts Rd, Singapore 228221</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Bacchanalia</name>
+        <address>39 Hongkong Street, Singapore 059678</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Beni Singapore</name>
+        <address>333A Orchard Road, #02-37 Mandarin Gallery, Singapore 238897</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Candlenut Kitchen</name>
+        <address>17A Dempsey Road, Singapore 249676</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Cut by Wolfgang Puck</name>
+        <address>2 Bayfront Avenue, #B1-71, Galleria Level The Shoppes at Marina Bay Sands, Singapore 018972</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Crystal Jade Golden Palace Restaurant</name>
+        <address>290 Orchard Rd, #05-22 Paragon Shopping Centre, Singapore 238859</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Corner House</name>
+        <address>1 Cluny Road, E J H Corner House Singapore Botanic Gardens, 259569</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Forest</name>
+        <address>16 Sentosa Gateway, Equarius Hotel, #01-521 & 522, Singapore 098133</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>JAAN</name>
+        <address>2 Stamford Road, Level 70, Equinox Complex, Singapore 178882</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Hong Kong Soya Sauce Chicken Rice and Noodle</name>
+        <address>Blk 335, Smith Street #02-126, Chinatown Food Complex, Singapore 050335</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Hill Street Tai Hwa Pork Noodles</name>
+        <address>466 Crawford Lane, Tai Hwa Eating House #01-12 Singapore 190465</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Lei Garden</name>
+        <address>30 Victoria St, Singapore 187996</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Osia Steak and Seafood Grill</name>
+        <address>26 Sentosa Gateway, Festive Walk, #02-140 & 141, Singapore 098138</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>PUTIEN</name>
+        <address>127 Kitchener Rd, Singapore 208514</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Rhubarb Le Restaurant</name>
+        <address>3 Duxton Hill, Singapore 089589</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Shinji by Kanesaka</name>
+        <address> 76 Bras Basah Rd, Lobby Floor, Carlton Hotel, Singapore 189558</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Summer Pavilion</name>
+        <address>7 Raffles Ave, Singapore 039799</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Ginza Sushi Ichi</name>
+        <address>320 Orchard Road, #01-04 Singapore Marriott Tang Plaza Hotel, Singapore 238865</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>terra Tokyo-Italian</name>
+        <address>54 Tras St, Singapore 078993</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>The Song Of India</name>
+        <address>33 Scotts Road, Singapore 228226</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Waku Ghin</name>
+        <address>2 Bayfront Avenue, Level 2 Dining, L2-01, The Shoppes at Marina Bay Sands, Singapore 018956</address>
+        <tagged>onestar</tagged>
+    </place>
+    <place>
+        <name>Restaurant André</name>
+        <address>41 Bukit Pasoh Rd, Singapore 089855</address>
+        <tagged>twostars</tagged>
+    </place>
+    <place>
+        <name>L'Atelier de Joël Robuchon</name>
+        <address>8 Sentosa Gateway, Singapore 098269</address>
+        <tagged>twostars</tagged>
+    </place>
+    <place>
+        <name>Les Amis</name>
+        <address>1 Scotts Road, #01-16 Shaw Centre, Singapore 228208</address>
+        <tagged>twostars</tagged>
+    </place>
+    <place>
+        <name>Odette</name>
+        <address>1 Saint Andrew's Road, #01-04, National Gallery, Singapore 178957</address>
+        <tagged>twostars</tagged>
+    </place>
+    <place>
+        <name>Shisen Hanten</name>
+        <address>333 Orchard Rd, Singapore 238867</address>
+        <tagged>twostars</tagged>
+    </place>
+    <place>
+        <name>Shoukouwa Restaurant</name>
+        <address>1 Fullerton Road, #02-02A One Fullerton, Singapore 049213</address>
+        <tagged>twostars</tagged>
+    </place>
+    <place>
+        <name>Joël Robuchon Restaurant</name>
+        <address>26 Sentosa Gateway, Hotel Michael, #01-104 & 105, Singapore 098138</address>
+        <tagged>threestars</tagged>
+    </place>	
+    <tags>bookmarks</tags>
+    <tags>onestar</tags>
+    <tags>twostars</tags>
+    <tags>threestars</tags>
+    <tags>attractions</tags>
+</touristbook>
