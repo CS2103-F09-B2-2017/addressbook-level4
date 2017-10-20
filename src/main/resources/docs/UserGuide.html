@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.4">
-<title>Tourist Book - User Guide</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
-<style>
+	<head>
+		<meta charset="UTF-8">
+			<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="generator" content="Asciidoctor 1.5.4">
+					<title>Tourist Book - User Guide</title>
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+						<style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 /* Remove comment around @import statement below when using as a custom stylesheet */
 /*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
@@ -418,761 +418,1004 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 </head>
 <body class="article">
-<div id="header">
-<h1>Tourist Book - User Guide</h1>
-</div>
-<div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>By: <code>Team F09-B2</code>      Since: <code>Aug 2017</code>      Licence: <code>MIT</code></p>
-</div>
-</div>
-<div id="toc" class="toc">
-<div id="toctitle"></div>
-<ul class="sectlevel1">
-<li><a href="#_quick_start">1. Quick Start</a></li>
-<li><a href="#_features_in_v1_0">2. Features in v1.0</a>
-<ul class="sectlevel2">
-<li><a href="#_viewing_help_code_help_code_or_code_h_code">2.1. Viewing help : <code>help</code> or <code>h</code></a></li>
-<li><a href="#_adding_a_place_code_add_code_or_code_a_code">2.2. Adding a place: <code>add</code> or <code>a</code></a></li>
-<li><a href="#_listing_all_places_code_list_code_or_code_l_code">2.3. Listing all places : <code>list</code> or <code>l</code></a></li>
-<li><a href="#_editing_a_place_code_edit_code_or_code_ed_code">2.4. Editing a place : <code>edit</code> or <code>ed</code></a></li>
-<li><a href="#_locating_places_by_name_code_find_code_or_code_fd_code">2.5. Locating places by name: <code>find</code> or  <code>fd</code></a></li>
-<li><a href="#_deleting_a_place_code_delete_code_or_code_del_code">2.6. Deleting a place : <code>delete</code> or <code>del</code></a></li>
-<li><a href="#_selecting_a_place_code_select_code_or_code_se_code">2.7. Selecting a place : <code>select</code> or <code>se</code></a></li>
-<li><a href="#_listing_entered_commands_code_history_code_or_code_hy_code">2.8. Listing entered commands : <code>history</code> or <code>hy</code></a></li>
-<li><a href="#_undoing_previous_command_code_undo_code_or_code_un_code">2.9. Undoing previous command : <code>undo</code> or <code>un</code></a></li>
-<li><a href="#_redoing_the_previously_undone_command_code_redo_code_or_code_re_code">2.10. Redoing the previously undone command : <code>redo</code> or <code>re</code></a></li>
-<li><a href="#_clearing_all_entries_code_clear_code_or_code_c_code">2.11. Clearing all entries : <code>clear</code> or <code>c</code></a></li>
-<li><a href="#_exiting_the_program_code_exit_code_or_code_ex_code">2.12. Exiting the program : <code>exit</code> or <code>ex</code></a></li>
-<li><a href="#_saving_the_data">2.13. Saving the data</a></li>
-</ul>
-</li>
-<li><a href="#_changes_from_v1_2">3. Changes from v1.2</a>
-<ul class="sectlevel2">
-<li><a href="#_displaying_mrt_map_of_singapore">3.1. Displaying MRT map of Singapore</a></li>
-<li><a href="#_useful_contact_numbers_in_singapore">3.2. Useful contact numbers in Singapore</a></li>
-<li><a href="#_bookmark_a_place_code_bookmark_code">3.3. Bookmark a place: <code>bookmark</code></a></li>
-<li><a href="#_display_singapore_weather_code_weather_code">3.4. Display Singapore weather: <code>weather</code></a></li>
-<li><a href="#_clearing_all_bookmarks_code_clear_bookmark_code">3.5. Clearing all bookmarks: <code>clear_bookmark</code></a></li>
-</ul>
-</li>
-<li><a href="#_coming_in_v2_0">4. Coming in v2.0</a>
-<ul class="sectlevel2">
-<li><a href="#_changing_the_display_color_of_a_tag">4.1. Changing the display color of a tag</a></li>
-<li><a href="#_view_current_psi">4.2. View current PSI</a></li>
-<li><a href="#_get_directions_to_selected_destination">4.3. Get directions to selected destination</a></li>
-<li><a href="#_tourist_book_save_files_are_now_exportable_to_csv_format">4.4. Tourist Book save files are now exportable to .csv format</a></li>
-<li><a href="#_common_statutes_laws_in_singapore">4.5. Common statutes/laws in Singapore</a></li>
-<li><a href="#_displays_the_selected_place_s_website_if_any">4.6. Displays the selected place&#8217;s website (if any)</a></li>
-<li><a href="#_rating_system">4.7. Rating system</a></li>
-<li><a href="#_exchange_rate">4.8. Exchange Rate</a></li>
-</ul>
-</li>
-<li><a href="#_faq">5. FAQ</a></li>
-<li><a href="#_command_summary">6. Command Summary</a></li>
-</ul>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_quick_start">1. Quick Start</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Ensure you have Java version <code>1.8.0_60</code> or later installed in your Computer.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
+	<div id="header">
+		<h1>Tourist Book - User Guide</h1>
+	</div>
+	<div id="content">
+		<div id="preamble">
+			<div class="sectionbody">
+				<div class="paragraph">
+					<p>By: <code>Team F09-B2</code>      Since: <code>Aug 2017</code>      Licence: <code>MIT</code>
+					</p>
+				</div>
+			</div>
+			<div id="toc" class="toc">
+				<div id="toctitle"/>
+				<ul class="sectlevel1">
+					<li>
+						<a href="#_quick_start">1. Quick Start</a>
+					</li>
+					<li>
+						<a href="#_features_in_v1_0">2. Features in v1.0</a>
+						<ul class="sectlevel2">
+							<li>
+								<a href="#_viewing_help_code_help_code_or_code_h_code">2.1. Viewing help : <code>help</code> or <code>h</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_adding_a_place_code_add_code_or_code_a_code">2.2. Adding a place: <code>add</code> or <code>a</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_listing_all_places_code_list_code_or_code_l_code">2.3. Listing all places : <code>list</code> or <code>l</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_editing_a_place_code_edit_code_or_code_ed_code">2.4. Editing a place : <code>edit</code> or <code>ed</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_locating_places_by_name_code_find_code_or_code_fd_code">2.5. Locating places by name: <code>find</code> or  <code>fd</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_deleting_a_place_code_delete_code_or_code_del_code">2.6. Deleting a place : <code>delete</code> or <code>del</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_selecting_a_place_code_select_code_or_code_se_code">2.7. Selecting a place : <code>select</code> or <code>se</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_listing_entered_commands_code_history_code_or_code_hy_code">2.8. Listing entered commands : <code>history</code> or <code>hy</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_undoing_previous_command_code_undo_code_or_code_un_code">2.9. Undoing previous command : <code>undo</code> or <code>un</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_redoing_the_previously_undone_command_code_redo_code_or_code_re_code">2.10. Redoing the previously undone command : <code>redo</code> or <code>re</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_clearing_all_entries_code_clear_code_or_code_c_code">2.11. Clearing all entries : <code>clear</code> or <code>c</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_exiting_the_program_code_exit_code_or_code_ex_code">2.12. Exiting the program : <code>exit</code> or <code>ex</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_saving_the_data">2.13. Saving the data</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#_changes_from_v1_2">3. Changes from v1.2</a>
+						<ul class="sectlevel2">
+							<li>
+								<a href="#_displaying_mrt_map_of_singapore">3.1. Displaying MRT map of Singapore</a>
+							</li>
+							<li>
+								<a href="#_useful_contact_numbers_in_singapore">3.2. Useful contact numbers in Singapore</a>
+							</li>
+							<li>
+								<a href="#_bookmark_a_place_code_bookmark_code">3.3. Bookmark a place: <code>bookmark</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_display_singapore_weather_code_weather_code">3.4. Display Singapore weather: <code>weather</code>
+								</a>
+							</li>
+							<li>
+								<a href="#_clearing_all_bookmarks_code_clear_bookmark_code">3.5. Clearing all bookmarks: <code>clear_bookmark</code>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#_coming_in_v2_0">4. Coming in v2.0</a>
+						<ul class="sectlevel2">
+							<li>
+								<a href="#_changing_the_display_color_of_a_tag">4.1. Changing the display color of a tag</a>
+							</li>
+							<li>
+								<a href="#_view_current_psi">4.2. View current PSI</a>
+							</li>
+							<li>
+								<a href="#_get_directions_to_selected_destination">4.3. Get directions to selected destination</a>
+							</li>
+							<li>
+								<a href="#_tourist_book_save_files_are_now_exportable_to_csv_format">4.4. Tourist Book save files are now exportable to .csv format</a>
+							</li>
+							<li>
+								<a href="#_common_statutes_laws_in_singapore">4.5. Common statutes/laws in Singapore</a>
+							</li>
+							<li>
+								<a href="#_displays_the_selected_place_s_website_if_any">4.6. Displays the selected place&#8217;s website (if any)</a>
+							</li>
+							<li>
+								<a href="#_rating_system">4.7. Rating system</a>
+							</li>
+							<li>
+								<a href="#_exchange_rate">4.8. Exchange Rate</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#_faq">5. FAQ</a>
+					</li>
+					<li>
+						<a href="#_command_summary">6. Command Summary</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sect1">
+			<h2 id="_quick_start">1. Quick Start</h2>
+			<div class="sectionbody">
+				<div class="olist arabic">
+					<ol class="arabic">
+						<li>
+							<p>Ensure you have Java version <code>1.8.0_60</code> or later installed in your Computer.</p>
+							<div class="admonitionblock note">
+								<table>
+									<tr>
+										<td class="icon">
+											<div class="title">Note</div>
+										</td>
+										<td class="content">
 Having any Java 8 version is not enough.<br>
 This app will not work with earlier versions of Java 8.
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Download the latest <code>addressbook.jar</code> <a href="https://github.com/CS2103AUG2017-F09-B2/main/releases">here</a>.</p>
-</li>
-<li>
-<p>Copy the file to the folder you want to use as the home folder for your Address Book.</p>
-</li>
-<li>
-<p>Double-click the file to start the app. The GUI should appear in a few seconds.</p>
-<div class="imageblock">
-<div class="content">
-<img src="images/Ui.png" alt="Ui" width="790">
-</div>
-</div>
-</li>
-<li>
-<p>Type the command in the command box and press <kbd>Enter</kbd> to execute it.<br>
-e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> will open the help window.</p>
-</li>
-<li>
-<p>Some example commands you can try:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong><code>list</code></strong> : lists all places</p>
-</li>
-<li>
-<p><strong><code>add</code></strong><code>n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956</code> : adds a place named <code>Marina Bay Sands</code> to the Tourist Book.</p>
-</li>
-<li>
-<p><strong><code>delete</code></strong><code>3</code> : deletes the 3rd place shown in the current list</p>
-</li>
-<li>
-<p><strong><code>exit</code></strong> : exits the app</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Refer to the <a href="#features">Features</a> section below for details of each command.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_features_in_v1_0">2. Features in v1.0</h2>
-<div class="sectionbody">
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p><strong>Command Format</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>add n/NAME</code>, <code>NAME</code> is a parameter which can be used as <code>add n/Marina Bay Sands</code>.</p>
-</li>
-<li>
-<p>Items in square brackets are optional e.g <code>n/NAME [t/TAG]</code> can be used as <code>n/Marina Bay Sands t/attractions</code> or as <code>n/Marina Bay Sands</code>.</p>
-</li>
-<li>
-<p>Items with <code>…</code>​ after them can be used multiple times including zero times e.g. <code>[t/TAG]&#8230;&#8203;</code> can be used as <code>&#160;</code> (i.e. 0 times), <code>t/attractions</code>, <code>t/onestar t/twostars</code> etc.</p>
-</li>
-<li>
-<p>Parameters can be in any order e.g. if the command specifies <code>n/NAME a/ADDRESS</code>, <code>a/ADDRESS</code> n/NAME` is also acceptable.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_viewing_help_code_help_code_or_code_h_code">2.1. Viewing help : <code>help</code> or <code>h</code></h3>
-<div class="paragraph">
-<p>Format: <code>help</code> or <code>h</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_adding_a_place_code_add_code_or_code_a_code">2.2. Adding a place: <code>add</code> or <code>a</code></h3>
-<div class="paragraph">
-<p>Adds a place to the Tourist Book<br>
-Format: <code>add n/NAME a/ADDRESS [t/TAG]&#8230;&#8203;</code></p>
-</div>
-<div class="paragraph">
-<p>or</p>
-</div>
-<div class="paragraph">
-<p>Format: <code>a n/NAME a/ADDRESS [t/TAG]&#8230;&#8203;</code></p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
+											</td>
+										</tr>
+									</table>
+								</div>
+							</li>
+							<li>
+								<p>Download the latest <code>addressbook.jar</code>
+									<a href="https://github.com/CS2103AUG2017-F09-B2/main/releases">here</a>.</p>
+							</li>
+							<li>
+								<p>Copy the file to the folder you want to use as the home folder for your Address Book.</p>
+							</li>
+							<li>
+								<p>Double-click the file to start the app. The GUI should appear in a few seconds.</p>
+								<div class="imageblock">
+									<div class="content">
+										<img src="images/Ui.png" alt="Ui" width="790">
+										</div>
+									</div>
+								</li>
+								<li>
+									<p>Type the command in the command box and press <kbd>Enter</kbd> to execute it.<br>
+e.g. typing <strong>
+												<code>help</code>
+											</strong> and pressing <kbd>Enter</kbd> will open the help window.</p>
+									</li>
+									<li>
+										<p>Some example commands you can try:</p>
+										<div class="ulist">
+											<ul>
+												<li>
+													<p>
+														<strong>
+															<code>list</code>
+														</strong> : lists all places</p>
+												</li>
+												<li>
+													<p>
+														<strong>
+															<code>add</code>
+														</strong>
+														<code>n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956</code> : adds a place named <code>Marina Bay Sands</code> to the Tourist Book.</p>
+												</li>
+												<li>
+													<p>
+														<strong>
+															<code>delete</code>
+														</strong>
+														<code>3</code> : deletes the 3rd place shown in the current list</p>
+												</li>
+												<li>
+													<p>
+														<strong>
+															<code>exit</code>
+														</strong> : exits the app</p>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p>Refer to the <a href="#features">Features</a> section below for details of each command.</p>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="sect1">
+						<h2 id="_features_in_v1_0">2. Features in v1.0</h2>
+						<div class="sectionbody">
+							<div class="exampleblock">
+								<div class="content">
+									<div class="paragraph">
+										<p>
+											<strong>Command Format</strong>
+										</p>
+									</div>
+									<div class="ulist">
+										<ul>
+											<li>
+												<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>add n/NAME</code>, <code>NAME</code> is a parameter which can be used as <code>add n/Marina Bay Sands</code>.</p>
+											</li>
+											<li>
+												<p>Items in square brackets are optional e.g <code>n/NAME [t/TAG]</code> can be used as <code>n/Marina Bay Sands t/attractions</code> or as <code>n/Marina Bay Sands</code>.</p>
+											</li>
+											<li>
+												<p>Items with <code>…</code>​ after them can be used multiple times including zero times e.g. <code>[t/TAG]&#8230;&#8203;</code> can be used as <code>&#160;</code> (i.e. 0 times), <code>t/attractions</code>, <code>t/onestar t/twostars</code> etc.</p>
+											</li>
+											<li>
+												<p>Parameters can be in any order e.g. if the command specifies <code>n/NAME a/ADDRESS</code>, <code>a/ADDRESS</code> n/NAME` is also acceptable.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sect2">
+								<h3 id="_viewing_help_code_help_code_or_code_h_code">2.1. Viewing help : <code>help</code> or <code>h</code>
+								</h3>
+								<div class="paragraph">
+									<p>Format: <code>help</code> or <code>h</code>
+									</p>
+								</div>
+							</div>
+							<div class="sect2">
+								<h3 id="_adding_a_place_code_add_code_or_code_a_code">2.2. Adding a place: <code>add</code> or <code>a</code>
+								</h3>
+								<div class="paragraph">
+									<p>Adds a place to the Tourist Book<br>
+Format: <code>add n/NAME a/ADDRESS [t/TAG]&#8230;&#8203;</code>
+										</p>
+									</div>
+									<div class="paragraph">
+										<p>or</p>
+									</div>
+									<div class="paragraph">
+										<p>Format: <code>a n/NAME a/ADDRESS [t/TAG]&#8230;&#8203;</code>
+										</p>
+									</div>
+									<div class="admonitionblock tip">
+										<table>
+											<tr>
+												<td class="icon">
+													<div class="title">Tip</div>
+												</td>
+												<td class="content">
 A place can have any number of tags (including 0)
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>add n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956</code></p>
-</li>
-<li>
-<p><code>a n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956 t/attractions</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_listing_all_places_code_list_code_or_code_l_code">2.3. Listing all places : <code>list</code> or <code>l</code></h3>
-<div class="paragraph">
-<p>Shows a list of all places in the Tourist Book.<br>
-Format: <code>list</code> or <code>l</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_editing_a_place_code_edit_code_or_code_ed_code">2.4. Editing a place : <code>edit</code> or <code>ed</code></h3>
-<div class="paragraph">
-<p>Edits an existing place in the address book.<br>
-Format: <code>edit INDEX [n/NAME] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p>
-</div>
-<div class="paragraph">
-<p>or</p>
-</div>
-<div class="paragraph">
-<p>Format: <code>ed INDEX [n/NAME] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Edits the place at the specified <code>INDEX</code>. The index refers to the index number shown in the last place listing. The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
-</li>
-<li>
-<p>At least one of the optional fields must be provided.</p>
-</li>
-<li>
-<p>Existing values will be updated to the input values.</p>
-</li>
-<li>
-<p>When editing tags, the existing tags of the place will be removed i.e adding of tags is not cumulative.</p>
-</li>
-<li>
-<p>You can remove all the place&#8217;s tags by typing <code>t/</code> without specifying any tags after it.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>edit 1 a/20 Bayfront Avenue, Singapore 000001 t/bookmarks</code><br>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="paragraph">
+										<p>Examples:</p>
+									</div>
+									<div class="ulist">
+										<ul>
+											<li>
+												<p>
+													<code>add n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956</code>
+												</p>
+											</li>
+											<li>
+												<p>
+													<code>a n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956 t/attractions</code>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sect2">
+									<h3 id="_listing_all_places_code_list_code_or_code_l_code">2.3. Listing all places : <code>list</code> or <code>l</code>
+									</h3>
+									<div class="paragraph">
+										<p>Shows a list of all places in the Tourist Book.<br>
+Format: <code>list</code> or <code>l</code>
+											</p>
+										</div>
+									</div>
+									<div class="sect2">
+										<h3 id="_editing_a_place_code_edit_code_or_code_ed_code">2.4. Editing a place : <code>edit</code> or <code>ed</code>
+										</h3>
+										<div class="paragraph">
+											<p>Edits an existing place in the address book.<br>
+Format: <code>edit INDEX [n/NAME] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code>
+												</p>
+											</div>
+											<div class="paragraph">
+												<p>or</p>
+											</div>
+											<div class="paragraph">
+												<p>Format: <code>ed INDEX [n/NAME] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code>
+												</p>
+											</div>
+											<div class="sidebarblock">
+												<div class="content">
+													<div class="ulist">
+														<ul>
+															<li>
+																<p>Edits the place at the specified <code>INDEX</code>. The index refers to the index number shown in the last place listing. The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+															</li>
+															<li>
+																<p>At least one of the optional fields must be provided.</p>
+															</li>
+															<li>
+																<p>Existing values will be updated to the input values.</p>
+															</li>
+															<li>
+																<p>When editing tags, the existing tags of the place will be removed i.e adding of tags is not cumulative.</p>
+															</li>
+															<li>
+																<p>You can remove all the place&#8217;s tags by typing <code>t/</code> without specifying any tags after it.</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="paragraph">
+												<p>Examples:</p>
+											</div>
+											<div class="ulist">
+												<ul>
+													<li>
+														<p>
+															<code>edit 1 a/20 Bayfront Avenue, Singapore 000001 t/bookmarks</code>
+															<br>
 Edits the address and tag of the 1st place to be <code>20 Bayfront Avenue</code> and <code>bookmarks</code> respectively.</p>
-</li>
-<li>
-<p><code>ed 2 n/Singapore Zoo t/</code><br>
+														</li>
+														<li>
+															<p>
+																<code>ed 2 n/Singapore Zoo t/</code>
+																<br>
 Edits the name of the 2nd place to be <code>Singapore Zoo</code> and clears all existing tags.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_locating_places_by_name_code_find_code_or_code_fd_code">2.5. Locating places by name: <code>find</code> or  <code>fd</code></h3>
-<div class="paragraph">
-<p>Finds places whose names contain any of the given keywords.<br>
-Format: <code>find KEYWORD [MORE_KEYWORDS]</code> or  <code>fd KEYWORD [MORE_KEYWORDS]</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>The search is case insensitive. e.g <code>zoo</code> will match <code>Zoo</code></p>
-</li>
-<li>
-<p>The order of the keywords does not matter. e.g. <code>Singapore Zoo</code> will match <code>Zoo Singapore</code></p>
-</li>
-<li>
-<p>Only the name is searched.</p>
-</li>
-<li>
-<p>Only full words will be matched e.g. <code>Singa</code> will not match <code>Singapore</code></p>
-</li>
-<li>
-<p>Places matching at least one keyword will be returned (i.e. <code>OR</code> search). e.g. <code>Singapore Gardens</code> will return <code>Singapore Zoo</code>, <code>Singapore Botanical Gardens</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>find Singapore</code><br>
-Returns <code>Singapore Zoo</code> and <code>Singapore Flyer</code></p>
-</li>
-<li>
-<p><code>fd Singapore Sands Botanic</code><br>
-Returns any place having names <code>Singapore</code>, <code>Sands</code>, or <code>Botanic</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_deleting_a_place_code_delete_code_or_code_del_code">2.6. Deleting a place : <code>delete</code> or <code>del</code></h3>
-<div class="paragraph">
-<p>Deletes the specified place from the Tourist Book.<br>
-Format: <code>delete INDEX</code> or <code>del INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Deletes the place at the specified <code>INDEX</code>.</p>
-</li>
-<li>
-<p>The index refers to the index number shown in the most recent listing.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>list</code><br>
-<code>delete 2</code><br>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="sect2">
+													<h3 id="_locating_places_by_name_code_find_code_or_code_fd_code">2.5. Locating places by name: <code>find</code> or  <code>fd</code>
+													</h3>
+													<div class="paragraph">
+														<p>Finds places whose names contain any of the given keywords.<br>
+Format: <code>find KEYWORD [MORE_KEYWORDS]</code> or  <code>fd KEYWORD [MORE_KEYWORDS]</code>
+															</p>
+														</div>
+														<div class="sidebarblock">
+															<div class="content">
+																<div class="ulist">
+																	<ul>
+																		<li>
+																			<p>The search is case insensitive. e.g <code>zoo</code> will match <code>Zoo</code>
+																			</p>
+																		</li>
+																		<li>
+																			<p>The order of the keywords does not matter. e.g. <code>Singapore Zoo</code> will match <code>Zoo Singapore</code>
+																			</p>
+																		</li>
+																		<li>
+																			<p>Only the name is searched.</p>
+																		</li>
+																		<li>
+																			<p>Only full words will be matched e.g. <code>Singa</code> will not match <code>Singapore</code>
+																			</p>
+																		</li>
+																		<li>
+																			<p>Places matching at least one keyword will be returned (i.e. <code>OR</code> search). e.g. <code>Singapore Gardens</code> will return <code>Singapore Zoo</code>, <code>Singapore Botanical Gardens</code>
+																			</p>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="paragraph">
+															<p>Examples:</p>
+														</div>
+														<div class="ulist">
+															<ul>
+																<li>
+																	<p>
+																		<code>find Singapore</code>
+																		<br>
+Returns <code>Singapore Zoo</code> and <code>Singapore Flyer</code>
+																		</p>
+																	</li>
+																	<li>
+																		<p>
+																			<code>fd Singapore Sands Botanic</code>
+																			<br>
+Returns any place having names <code>Singapore</code>, <code>Sands</code>, or <code>Botanic</code>
+																			</p>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="sect2">
+																<h3 id="_deleting_a_place_code_delete_code_or_code_del_code">2.6. Deleting a place : <code>delete</code> or <code>del</code>
+																</h3>
+																<div class="paragraph">
+																	<p>Deletes the specified place from the Tourist Book.<br>
+Format: <code>delete INDEX</code> or <code>del INDEX</code>
+																		</p>
+																	</div>
+																	<div class="sidebarblock">
+																		<div class="content">
+																			<div class="ulist">
+																				<ul>
+																					<li>
+																						<p>Deletes the place at the specified <code>INDEX</code>.</p>
+																					</li>
+																					<li>
+																						<p>The index refers to the index number shown in the most recent listing.</p>
+																					</li>
+																					<li>
+																						<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="paragraph">
+																		<p>Examples:</p>
+																	</div>
+																	<div class="ulist">
+																		<ul>
+																			<li>
+																				<p>
+																					<code>list</code>
+																					<br>
+																						<code>delete 2</code>
+																						<br>
 Deletes the 2nd place in the address book.</p>
-</li>
-<li>
-<p><code>find Bay</code><br>
-<code>del 1</code><br>
+																					</li>
+																					<li>
+																						<p>
+																							<code>find Bay</code>
+																							<br>
+																								<code>del 1</code>
+																								<br>
 Deletes the 1st place in the results of the <code>find</code> command.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_selecting_a_place_code_select_code_or_code_se_code">2.7. Selecting a place : <code>select</code> or <code>se</code></h3>
-<div class="paragraph">
-<p>Selects the place identified by the index number used in the last person listing.<br>
-Format: <code>select INDEX</code> or <code>se INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Selects the place and loads the Google search page the place at the specified <code>INDEX</code>.</p>
-</li>
-<li>
-<p>The index refers to the index number shown in the most recent listing.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#8203;</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>list</code><br>
-<code>select 2</code><br>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																				<div class="sect2">
+																					<h3 id="_selecting_a_place_code_select_code_or_code_se_code">2.7. Selecting a place : <code>select</code> or <code>se</code>
+																					</h3>
+																					<div class="paragraph">
+																						<p>Selects the place identified by the index number used in the last person listing.<br>
+Format: <code>select INDEX</code> or <code>se INDEX</code>
+																							</p>
+																						</div>
+																						<div class="sidebarblock">
+																							<div class="content">
+																								<div class="ulist">
+																									<ul>
+																										<li>
+																											<p>Selects the place and loads the Google search page the place at the specified <code>INDEX</code>.</p>
+																										</li>
+																										<li>
+																											<p>The index refers to the index number shown in the most recent listing.</p>
+																										</li>
+																										<li>
+																											<p>The index <strong>must be a positive integer</strong>
+																												<code>1, 2, 3, &#8230;&#8203;</code>
+																											</p>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="paragraph">
+																							<p>Examples:</p>
+																						</div>
+																						<div class="ulist">
+																							<ul>
+																								<li>
+																									<p>
+																										<code>list</code>
+																										<br>
+																											<code>select 2</code>
+																											<br>
 Selects the 2nd place in the address book.</p>
-</li>
-<li>
-<p><code>find Bay</code><br>
-<code>select 1</code><br>
+																										</li>
+																										<li>
+																											<p>
+																												<code>find Bay</code>
+																												<br>
+																													<code>select 1</code>
+																													<br>
 Selects the 1st place in the results of the <code>find</code> command.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_listing_entered_commands_code_history_code_or_code_hy_code">2.8. Listing entered commands : <code>history</code> or <code>hy</code></h3>
-<div class="paragraph">
-<p>Lists all the commands that you have entered in reverse chronological order.<br>
-Format: <code>history</code> or <code>hy</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Pressing the <kbd>&uarr;</kbd> and <kbd>&darr;</kbd> arrows will display the previous and next input respectively in the command box.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_undoing_previous_command_code_undo_code_or_code_un_code">2.9. Undoing previous command : <code>undo</code> or <code>un</code></h3>
-<div class="paragraph">
-<p>Restores the Tourist Book to the state before the previous <em>undoable</em> command was executed.<br>
-Format: <code>undo</code> or <code>un</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Undoable commands: those commands that modify the Tourist Book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>delete 1</code><br>
-<code>list</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
-</li>
-<li>
-<p><code>select 1</code><br>
-<code>list</code><br>
-<code>undo</code><br>
+																												</li>
+																											</ul>
+																										</div>
+																									</div>
+																									<div class="sect2">
+																										<h3 id="_listing_entered_commands_code_history_code_or_code_hy_code">2.8. Listing entered commands : <code>history</code> or <code>hy</code>
+																										</h3>
+																										<div class="paragraph">
+																											<p>Lists all the commands that you have entered in reverse chronological order.<br>
+Format: <code>history</code> or <code>hy</code>
+																												</p>
+																											</div>
+																											<div class="admonitionblock note">
+																												<table>
+																													<tr>
+																														<td class="icon">
+																															<div class="title">Note</div>
+																														</td>
+																														<td class="content">
+																															<div class="paragraph">
+																																<p>Pressing the <kbd>&uarr;</kbd> and <kbd>&darr;</kbd> arrows will display the previous and next input respectively in the command box.</p>
+																															</div>
+																														</td>
+																													</tr>
+																												</table>
+																											</div>
+																										</div>
+																										<div class="sect2">
+																											<h3 id="_undoing_previous_command_code_undo_code_or_code_un_code">2.9. Undoing previous command : <code>undo</code> or <code>un</code>
+																											</h3>
+																											<div class="paragraph">
+																												<p>Restores the Tourist Book to the state before the previous <em>undoable</em> command was executed.<br>
+Format: <code>undo</code> or <code>un</code>
+																													</p>
+																												</div>
+																												<div class="admonitionblock note">
+																													<table>
+																														<tr>
+																															<td class="icon">
+																																<div class="title">Note</div>
+																															</td>
+																															<td class="content">
+																																<div class="paragraph">
+																																	<p>Undoable commands: those commands that modify the Tourist Book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
+																																</div>
+																															</td>
+																														</tr>
+																													</table>
+																												</div>
+																												<div class="paragraph">
+																													<p>Examples:</p>
+																												</div>
+																												<div class="ulist">
+																													<ul>
+																														<li>
+																															<p>
+																																<code>delete 1</code>
+																																<br>
+																																	<code>list</code>
+																																	<br>
+																																		<code>undo</code> (reverses the <code>delete 1</code> command)<br>
+																																		</p>
+																																	</li>
+																																	<li>
+																																		<p>
+																																			<code>select 1</code>
+																																			<br>
+																																				<code>list</code>
+																																				<br>
+																																					<code>undo</code>
+																																					<br>
 The <code>undo</code> command fails as there are no undoable commands executed previously.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_redoing_the_previously_undone_command_code_redo_code_or_code_re_code">2.10. Redoing the previously undone command : <code>redo</code> or <code>re</code></h3>
-<div class="paragraph">
-<p>Reverses the most recent <code>undo</code> command.<br>
-Format: <code>redo</code> or <code>re</code></p>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>delete 1</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br></p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>redo</code><br>
+																																				</li>
+																																				<li>
+																																					<p>
+																																						<code>delete 1</code>
+																																						<br>
+																																							<code>clear</code>
+																																							<br>
+																																								<code>undo</code> (reverses the <code>clear</code> command)<br>
+																																									<code>undo</code> (reverses the <code>delete 1</code> command)<br>
+																																									</p>
+																																								</li>
+																																							</ul>
+																																						</div>
+																																					</div>
+																																					<div class="sect2">
+																																						<h3 id="_redoing_the_previously_undone_command_code_redo_code_or_code_re_code">2.10. Redoing the previously undone command : <code>redo</code> or <code>re</code>
+																																						</h3>
+																																						<div class="paragraph">
+																																							<p>Reverses the most recent <code>undo</code> command.<br>
+Format: <code>redo</code> or <code>re</code>
+																																								</p>
+																																							</div>
+																																							<div class="paragraph">
+																																								<p>Examples:</p>
+																																							</div>
+																																							<div class="ulist">
+																																								<ul>
+																																									<li>
+																																										<p>
+																																											<code>delete 1</code>
+																																											<br>
+																																												<code>undo</code> (reverses the <code>delete 1</code> command)<br>
+																																													<code>redo</code> (reapplies the <code>delete 1</code> command)<br>
+																																													</p>
+																																												</li>
+																																												<li>
+																																													<p>
+																																														<code>delete 1</code>
+																																														<br>
+																																															<code>redo</code>
+																																															<br>
 The <code>redo</code> command fails as there are no <code>undo</code> commands executed previously.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>clear</code> command)<br></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_clearing_all_entries_code_clear_code_or_code_c_code">2.11. Clearing all entries : <code>clear</code> or <code>c</code></h3>
-<div class="paragraph">
-<p>Clears all entries from the Tourist Book.<br>
-Format: <code>clear</code> or <code>c</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_exiting_the_program_code_exit_code_or_code_ex_code">2.12. Exiting the program : <code>exit</code> or <code>ex</code></h3>
-<div class="paragraph">
-<p>Exits the program.<br>
-Format: <code>exit</code> or <code>ex</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_saving_the_data">2.13. Saving the data</h3>
-<div class="paragraph">
-<p>Tourist Book data are saved in the hard disk automatically after any command that changes the data.<br>
+																																														</li>
+																																														<li>
+																																															<p>
+																																																<code>delete 1</code>
+																																																<br>
+																																																	<code>clear</code>
+																																																	<br>
+																																																		<code>undo</code> (reverses the <code>clear</code> command)<br>
+																																																			<code>undo</code> (reverses the <code>delete 1</code> command)<br>
+																																																				<code>redo</code> (reapplies the <code>delete 1</code> command)<br>
+																																																					<code>redo</code> (reapplies the <code>clear</code> command)<br>
+																																																					</p>
+																																																				</li>
+																																																			</ul>
+																																																		</div>
+																																																	</div>
+																																																	<div class="sect2">
+																																																		<h3 id="_clearing_all_entries_code_clear_code_or_code_c_code">2.11. Clearing all entries : <code>clear</code> or <code>c</code>
+																																																		</h3>
+																																																		<div class="paragraph">
+																																																			<p>Clears all entries from the Tourist Book.<br>
+Format: <code>clear</code> or <code>c</code>
+																																																				</p>
+																																																			</div>
+																																																		</div>
+																																																		<div class="sect2">
+																																																			<h3 id="_exiting_the_program_code_exit_code_or_code_ex_code">2.12. Exiting the program : <code>exit</code> or <code>ex</code>
+																																																			</h3>
+																																																			<div class="paragraph">
+																																																				<p>Exits the program.<br>
+Format: <code>exit</code> or <code>ex</code>
+																																																					</p>
+																																																				</div>
+																																																			</div>
+																																																			<div class="sect2">
+																																																				<h3 id="_saving_the_data">2.13. Saving the data</h3>
+																																																				<div class="paragraph">
+																																																					<p>Tourist Book data are saved in the hard disk automatically after any command that changes the data.<br>
 There is no need to save manually.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_changes_from_v1_2">3. Changes from v1.2</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_displaying_mrt_map_of_singapore">3.1. Displaying MRT map of Singapore</h3>
-<div class="paragraph">
-<p>*Display MRT map of Singapore by clicking on <code>MRT Map</code> &#8594; <code>MRT Map</code><br>
-*Display MRT map of Singapore by typing in Command Line <code>mrt</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_useful_contact_numbers_in_singapore">3.2. Useful contact numbers in Singapore</h3>
-<div class="paragraph">
-<p>Display a list of useful contact numbers by clicking on <code>Help &#8594; Useful Contacts</code><br></p>
-</div>
-<div class="paragraph">
-<p>or</p>
-</div>
-<div class="paragraph">
-<p>Display a list of useful contact numbers by using the CLI.<br>
-Format: <code>emergency</code> or <code>sos</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_bookmark_a_place_code_bookmark_code">3.3. Bookmark a place: <code>bookmark</code></h3>
-<div class="paragraph">
-<p>Adds a bookmark tag to the specified place from the address book.<br>
-Format: <code>bookmark INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Bookmarks the place at the specified <code>INDEX</code>.</p>
-</li>
-<li>
-<p>The index refers to the index number shown in the most recent listing.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>list</code><br>
-<code>bookmark 1</code><br>
+																																																					</div>
+																																																				</div>
+																																																			</div>
+																																																		</div>
+																																																		<div class="sect1">
+																																																			<h2 id="_changes_from_v1_2">3. Changes from v1.2</h2>
+																																																			<div class="sectionbody">
+																																																				<div class="sect2">
+																																																					<h3 id="_displaying_mrt_map_of_singapore">3.1. Displaying MRT map of Singapore</h3>
+																																																					<div class="paragraph">
+																																																						<p>*Display MRT map of Singapore by clicking on <code>MRT Map</code> &#8594; <code>MRT Map</code>
+																																																							<br>
+*Display MRT map of Singapore by typing in Command Line <code>mrt</code>
+																																																							</p>
+																																																						</div>
+																																																					</div>
+																																																					<div class="sect2">
+																																																						<h3 id="_useful_contact_numbers_in_singapore">3.2. Useful contact numbers in Singapore</h3>
+																																																						<div class="paragraph">
+																																																							<p>Display a list of useful contact numbers by clicking on <code>Help &#8594; Useful Contacts</code>
+																																																								<br>
+																																																								</p>
+																																																							</div>
+																																																							<div class="paragraph">
+																																																								<p>or</p>
+																																																							</div>
+																																																							<div class="paragraph">
+																																																								<p>Display a list of useful contact numbers by using the CLI.<br>
+Format: <code>emergency</code> or <code>sos</code>
+																																																									</p>
+																																																								</div>
+																																																							</div>
+																																																							<div class="sect2">
+																																																								<h3 id="_bookmark_a_place_code_bookmark_code">3.3. Bookmark a place: <code>bookmark</code>
+																																																								</h3>
+																																																								<div class="paragraph">
+																																																									<p>Adds a bookmark tag to the specified place from the address book.<br>
+Format: <code>bookmark INDEX</code>
+																																																										</p>
+																																																									</div>
+																																																									<div class="sidebarblock">
+																																																										<div class="content">
+																																																											<div class="ulist">
+																																																												<ul>
+																																																													<li>
+																																																														<p>Bookmarks the place at the specified <code>INDEX</code>.</p>
+																																																													</li>
+																																																													<li>
+																																																														<p>The index refers to the index number shown in the most recent listing.</p>
+																																																													</li>
+																																																													<li>
+																																																														<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+																																																													</li>
+																																																												</ul>
+																																																											</div>
+																																																										</div>
+																																																									</div>
+																																																									<div class="paragraph">
+																																																										<p>Examples:</p>
+																																																									</div>
+																																																									<div class="ulist">
+																																																										<ul>
+																																																											<li>
+																																																												<p>
+																																																													<code>list</code>
+																																																													<br>
+																																																														<code>bookmark 1</code>
+																																																														<br>
 Bookmarks the first place in the address book.</p>
-</li>
-<li>
-<p><code>find attractions</code><br>
-<code>bookmark 3</code><br>
+																																																													</li>
+																																																													<li>
+																																																														<p>
+																																																															<code>find attractions</code>
+																																																															<br>
+																																																																<code>bookmark 3</code>
+																																																																<br>
 Bookmarks the 3rd place in the results of the <code>find</code> command.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_display_singapore_weather_code_weather_code">3.4. Display Singapore weather: <code>weather</code></h3>
-<div class="paragraph">
-<p>Displays the current weather of Singapore.<br>
-Format: <code>weather</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_clearing_all_bookmarks_code_clear_bookmark_code">3.5. Clearing all bookmarks: <code>clear_bookmark</code></h3>
-<div class="paragraph">
-<p>Clears all bookmarks from the address book.<br>
-Format: <code>clear_bookmark</code></p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_coming_in_v2_0">4. Coming in v2.0</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_changing_the_display_color_of_a_tag">4.1. Changing the display color of a tag</h3>
-<div class="paragraph">
-<p>Changes the color of a selected tag to a colour of choice.<br>
-Format: <code>color /t TAG</code> or <code>col t/TAG</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_view_current_psi">4.2. View current PSI</h3>
-<div class="paragraph">
-<p>Displays the current PSI levels in Singapore.<br>
-Format: <code>psi</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_get_directions_to_selected_destination">4.3. Get directions to selected destination</h3>
-<div class="paragraph">
-<p>Displays the directions from location A to selected destination.<br>
-Format: <code>dir [INDEX_FROM] [INDEX_TO]</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Displays the location from <code>INDEX_FROM</code> to <code>INDEX_TO</code>. The index refers to the index number shown in the last place listing.</p>
-</li>
-<li>
-<p>Both fields must be provided.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> &gt;= 0 and within the range of the last places listing.</p>
-</li>
-<li>
-<p>An index which is 0 indicates to or from current location.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>dir 1 2</code><br>
+																																																															</li>
+																																																														</ul>
+																																																													</div>
+																																																												</div>
+																																																												<div class="sect2">
+																																																													<h3 id="_display_singapore_weather_code_weather_code">3.4. Display Singapore weather: <code>weather</code>
+																																																													</h3>
+																																																													<div class="paragraph">
+																																																														<p>Displays the current weather of Singapore.<br>
+Format: <code>weather</code>
+																																																															</p>
+																																																														</div>
+																																																													</div>
+																																																													<div class="sect2">
+																																																														<h3 id="_clearing_all_bookmarks_code_clear_bookmark_code">3.5. Clearing all bookmarks: <code>clear_bookmark</code>
+																																																														</h3>
+																																																														<div class="paragraph">
+																																																															<p>Clears all bookmarks from the address book.<br>
+Format: <code>clear_bookmark</code>
+																																																																</p>
+																																																															</div>
+																																																														</div>
+																																																													</div>
+																																																												</div>
+																																																												<div class="sect1">
+																																																													<h2 id="_coming_in_v2_0">4. Coming in v2.0</h2>
+																																																													<div class="sectionbody">
+																																																														<div class="sect2">
+																																																															<h3 id="_changing_the_display_color_of_a_tag">4.1. Changing the display color of a tag</h3>
+																																																															<div class="paragraph">
+																																																																<p>Changes the color of a selected tag to a colour of choice.<br>
+Format: <code>color /t TAG</code> or <code>col t/TAG</code>
+																																																																	</p>
+																																																																</div>
+																																																															</div>
+																																																															<div class="sect2">
+																																																																<h3 id="_view_current_psi">4.2. View current PSI</h3>
+																																																																<div class="paragraph">
+																																																																	<p>Displays the current PSI levels in Singapore.<br>
+Format: <code>psi</code>
+																																																																		</p>
+																																																																	</div>
+																																																																</div>
+																																																																<div class="sect2">
+																																																																	<h3 id="_get_directions_to_selected_destination">4.3. Get directions to selected destination</h3>
+																																																																	<div class="paragraph">
+																																																																		<p>Displays the directions from location A to selected destination.<br>
+Format: <code>dir [INDEX_FROM] [INDEX_TO]</code>
+																																																																			</p>
+																																																																		</div>
+																																																																		<div class="sidebarblock">
+																																																																			<div class="content">
+																																																																				<div class="ulist">
+																																																																					<ul>
+																																																																						<li>
+																																																																							<p>Displays the location from <code>INDEX_FROM</code> to <code>INDEX_TO</code>. The index refers to the index number shown in the last place listing.</p>
+																																																																						</li>
+																																																																						<li>
+																																																																							<p>Both fields must be provided.</p>
+																																																																						</li>
+																																																																						<li>
+																																																																							<p>The index <strong>must be a positive integer</strong> &gt;= 0 and within the range of the last places listing.</p>
+																																																																						</li>
+																																																																						<li>
+																																																																							<p>An index which is 0 indicates to or from current location.</p>
+																																																																						</li>
+																																																																					</ul>
+																																																																				</div>
+																																																																			</div>
+																																																																		</div>
+																																																																		<div class="paragraph">
+																																																																			<p>Examples:</p>
+																																																																		</div>
+																																																																		<div class="ulist">
+																																																																			<ul>
+																																																																				<li>
+																																																																					<p>
+																																																																						<code>dir 1 2</code>
+																																																																						<br>
 Returns the directions from the location at index 1 to index 2 of the places listing.</p>
-</li>
-<li>
-<p><code>dir 2 0</code><br>
+																																																																					</li>
+																																																																					<li>
+																																																																						<p>
+																																																																							<code>dir 2 0</code>
+																																																																							<br>
 Returns the directions from the location at index 2 to current location (index 0).</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_tourist_book_save_files_are_now_exportable_to_csv_format">4.4. Tourist Book save files are now exportable to .csv format</h3>
-<div class="paragraph">
-<p>Export your data to .csv file format for printing purposes.<br>
-Format: <code>export [TAG]</code></p>
-</div>
-<div class="paragraph">
-<p>or</p>
-</div>
-<div class="paragraph">
-<p>Format: <code>export all</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_common_statutes_laws_in_singapore">4.5. Common statutes/laws in Singapore</h3>
-<div class="paragraph">
-<p>Display a list of common statutes/laws for quick reference.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_displays_the_selected_place_s_website_if_any">4.6. Displays the selected place&#8217;s website (if any)</h3>
-<div class="paragraph">
-<p>Displays the selected place&#8217;s homepage if available, otherwise it will perform a Google search.<br>
-Format: <code>select 1</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_rating_system">4.7. Rating system</h3>
-<div class="paragraph">
-<p>Add and edit a rating to a place in the Tourist Book.<br>
-Format: <code>rate [INDEX] [RATING]</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_exchange_rate">4.8. Exchange Rate</h3>
-<div class="paragraph">
-<p>Get the latest exchange rates of currencies in Singaore.<br>
-Format: <code>[VALUE] [CURRENCY] to [DESIRED_CURRENCY]</code></p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_faq">5. FAQ</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Q</strong>: How do I transfer my data to another Computer?<br>
-<strong>A</strong>: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Tourist Book folder.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_command_summary">6. Command Summary</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Add</strong> <code>add n/NAME a/ADDRESS [t/TAG]&#8230;&#8203;</code><br>
+																																																																						</li>
+																																																																					</ul>
+																																																																				</div>
+																																																																			</div>
+																																																																			<div class="sect2">
+																																																																				<h3 id="_tourist_book_save_files_are_now_exportable_to_csv_format">4.4. Tourist Book save files are now exportable to .csv format</h3>
+																																																																				<div class="paragraph">
+																																																																					<p>Export your data to .csv file format for printing purposes.<br>
+Format: <code>export [TAG]</code>
+																																																																						</p>
+																																																																					</div>
+																																																																					<div class="paragraph">
+																																																																						<p>or</p>
+																																																																					</div>
+																																																																					<div class="paragraph">
+																																																																						<p>Format: <code>export all</code>
+																																																																						</p>
+																																																																					</div>
+																																																																				</div>
+																																																																				<div class="sect2">
+																																																																					<h3 id="_common_statutes_laws_in_singapore">4.5. Common statutes/laws in Singapore</h3>
+																																																																					<div class="paragraph">
+																																																																						<p>Display a list of common statutes/laws for quick reference.</p>
+																																																																					</div>
+																																																																				</div>
+																																																																				<div class="sect2">
+																																																																					<h3 id="_displays_the_selected_place_s_website_if_any">4.6. Displays the selected place&#8217;s website (if any)</h3>
+																																																																					<div class="paragraph">
+																																																																						<p>Displays the selected place&#8217;s homepage if available, otherwise it will perform a Google search.<br>
+Format: <code>select 1</code>
+																																																																							</p>
+																																																																						</div>
+																																																																					</div>
+																																																																					<div class="sect2">
+																																																																						<h3 id="_rating_system">4.7. Rating system</h3>
+																																																																						<div class="paragraph">
+																																																																							<p>Add and edit a rating to a place in the Tourist Book.<br>
+Format: <code>rate [INDEX] [RATING]</code>
+																																																																								</p>
+																																																																							</div>
+																																																																						</div>
+																																																																						<div class="sect2">
+																																																																							<h3 id="_exchange_rate">4.8. Exchange Rate</h3>
+																																																																							<div class="paragraph">
+																																																																								<p>Get the latest exchange rates of currencies in Singaore.<br>
+Format: <code>[VALUE] [CURRENCY] to [DESIRED_CURRENCY]</code>
+																																																																									</p>
+																																																																								</div>
+																																																																							</div>
+																																																																						</div>
+																																																																					</div>
+																																																																					<div class="sect1">
+																																																																						<h2 id="_faq">5. FAQ</h2>
+																																																																						<div class="sectionbody">
+																																																																							<div class="paragraph">
+																																																																								<p>
+																																																																									<strong>Q</strong>: How do I transfer my data to another Computer?<br>
+																																																																										<strong>A</strong>: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Tourist Book folder.</p>
+																																																																								</div>
+																																																																							</div>
+																																																																						</div>
+																																																																						<div class="sect1">
+																																																																							<h2 id="_command_summary">6. Command Summary</h2>
+																																																																							<div class="sectionbody">
+																																																																								<div class="ulist">
+																																																																									<ul>
+																																																																										<li>
+																																																																											<p>
+																																																																												<strong>Add</strong>
+																																																																												<code>add n/NAME a/ADDRESS [t/TAG]&#8230;&#8203;</code>
+																																																																												<br>
 e.g. <code>add n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956`f
-or `a n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956 t/attractions</code></p>
-</li>
-<li>
-<p><strong>Bookmark</strong> : <code>bookmark INDEX</code><br>
-e.g. <code>bookmark 2</code></p>
-</li>
-<li>
-<p><strong>Clear Bookmarks</strong>: <code>clear_bookmark</code></p>
-</li>
-<li>
-<p><strong>Clear</strong> : <code>clear</code> or <code>c</code></p>
-</li>
-<li>
-<p><strong>Delete</strong> : <code>delete INDEX</code>  or <code>del INDEX</code><br>
-e.g. <code>delete 3</code></p>
-</li>
-<li>
-<p><strong>Edit</strong> : <code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [t/TAG]&#8230;&#8203;</code><br>
-e.g. <code>edit 2 a/20 Bayfront Avenue, Singapore 000001 t/bookmarks</code> or <code>`ed 2 a/20 Bayfront Avenue, Singapore 000001</code></p>
-</li>
-<li>
-<p><strong>Find</strong> : <code>find KEYWORD [MORE_KEYWORDS]</code>  or <code>fd KEYWORD</code><br>
-e.g. <code>find Bay Park</code></p>
-</li>
-<li>
-<p><strong>List</strong> : <code>list</code> or <code>l</code></p>
-</li>
-<li>
-<p><strong>Help</strong> : <code>help</code> or <code>h</code></p>
-</li>
-<li>
-<p><strong>Weather</strong> : 'weather'</p>
-</li>
-<li>
-<p><strong>Select</strong> : <code>select INDEX</code>  or <code>s</code><br>
-e.g.<code>select 2</code></p>
-</li>
-<li>
-<p><strong>History</strong> : <code>history</code> or <code>hy</code></p>
-</li>
-<li>
-<p><strong>Undo</strong> : <code>undo</code> or <code>un</code></p>
-</li>
-<li>
-<p><strong>Redo</strong> : <code>redo</code> or <code>re</code></p>
-</li>
-<li>
-<p><strong>Map</strong> : <code>map</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="footer">
-<div id="footer-text">
+or `a n/Marina Bay Sands a/10 Bayfront Avenue, Singapore 018956 t/attractions</code>
+																																																																												</p>
+																																																																											</li>
+																																																																											<li>
+																																																																												<p>
+																																																																													<strong>Bookmark</strong> : <code>bookmark INDEX</code>
+																																																																													<br>
+e.g. <code>bookmark 2</code>
+																																																																													</p>
+																																																																												</li>
+																																																																												<li>
+																																																																													<p>
+																																																																														<strong>Clear Bookmarks</strong>: <code>clear_bookmark</code>
+																																																																													</p>
+																																																																												</li>
+																																																																												<li>
+																																																																													<p>
+																																																																														<strong>Clear</strong> : <code>clear</code> or <code>c</code>
+																																																																													</p>
+																																																																												</li>
+																																																																												<li>
+																																																																													<p>
+																																																																														<strong>Delete</strong> : <code>delete INDEX</code>  or <code>del INDEX</code>
+																																																																														<br>
+e.g. <code>delete 3</code>
+																																																																														</p>
+																																																																													</li>
+																																																																													<li>
+																																																																														<p>
+																																																																															<strong>Edit</strong> : <code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [t/TAG]&#8230;&#8203;</code>
+																																																																															<br>
+e.g. <code>edit 2 a/20 Bayfront Avenue, Singapore 000001 t/bookmarks</code> or <code>`ed 2 a/20 Bayfront Avenue, Singapore 000001</code>
+																																																																															</p>
+																																																																														</li>
+																																																																														<li>
+																																																																															<p>
+																																																																																<strong>Find</strong> : <code>find KEYWORD [MORE_KEYWORDS]</code>  or <code>fd KEYWORD</code>
+																																																																																<br>
+e.g. <code>find Bay Park</code>
+																																																																																</p>
+																																																																															</li>
+																																																																															<li>
+																																																																																<p>
+																																																																																	<strong>List</strong> : <code>list</code> or <code>l</code>
+																																																																																</p>
+																																																																															</li>
+																																																																															<li>
+																																																																																<p>
+																																																																																	<strong>Help</strong> : <code>help</code> or <code>h</code>
+																																																																																</p>
+																																																																															</li>
+																																																																															<li>
+																																																																																<p>
+																																																																																	<strong>Weather</strong> : 'weather'</p>
+																																																																															</li>
+																																																																															<li>
+																																																																																<p>
+																																																																																	<strong>Select</strong> : <code>select INDEX</code>  or <code>s</code>
+																																																																																	<br>
+e.g.<code>select 2</code>
+																																																																																	</p>
+																																																																																</li>
+																																																																																<li>
+																																																																																	<p>
+																																																																																		<strong>History</strong> : <code>history</code> or <code>hy</code>
+																																																																																	</p>
+																																																																																</li>
+																																																																																<li>
+																																																																																	<p>
+																																																																																		<strong>Undo</strong> : <code>undo</code> or <code>un</code>
+																																																																																	</p>
+																																																																																</li>
+																																																																																<li>
+																																																																																	<p>
+																																																																																		<strong>Redo</strong> : <code>redo</code> or <code>re</code>
+																																																																																	</p>
+																																																																																</li>
+																																																																																<li>
+																																																																																	<p>
+																																																																																		<strong>Map</strong> : <code>map</code>
+																																																																																	</p>
+																																																																																</li>
+																																																																															</ul>
+																																																																														</div>
+																																																																													</div>
+																																																																												</div>
+																																																																											</div>
+																																																																											<div id="footer">
+																																																																												<div id="footer-text">
 Last updated 2017-10-20 11:32:56 DST
-</div>
-</div>
-</body>
+																																																																												</div>
+																																																																											</div>
+																																																																										</body>
 
-</html>
+																																																																									</html>
+																																																																									
