@@ -225,30 +225,15 @@ The `redo` command fails as there are no `undo` commands executed previously.
 Clears all entries from the Tourist Book. +
 Format: `clear` or `c`
 
-=== Display Singapore weather : `weather`
-
-Display Singapore weather of that day on the browser. +
-Format: `weather`
-
 === Exiting the program : `exit` or `ex`
 
 Exits the program. +
 Format: `exit` or `ex`
 
-=== Viewing MRT map: `mrt`
-
-View the MRT map. +
-Format: `mrt`
-
 === Saving the data
 
 Tourist Book data are saved in the hard disk automatically after any command that changes the data. +
 There is no need to save manually.
-
-
-=== MRT map of Singapore: `mrt`
-
-Display the latest MRT map of Singapore by clicking on "MRT map" button or typing command `mrt`
 
 == Changes from v1.2
 === Displaying MRT map of Singapore
@@ -286,6 +271,10 @@ Bookmarks the first place in the address book.
 `bookmark 3` +
 Bookmarks the 3rd place in the results of the `find` command.
 
+=== Display Singapore weather: `weather`
+Displays the current weather of Singapore. +
+Format: `weather`
+
 === Clearing all bookmarks: `clear_bookmark`
 
 Clears all bookmarks from the address book. +
@@ -296,10 +285,6 @@ Format: `clear_bookmark`
 Changes the color of a selected tag to a colour of choice. +
 Format: `color /t TAG` or `col t/TAG`
 
-=== View current weather
-Displays the current weather of Singapore. +
-Format: `weather`
-
 === View current PSI
 Displays the current PSI levels in Singapore. +
 Format: `psi`
@@ -307,10 +292,6 @@ Format: `psi`
 === Get directions to selected destination
 Displays the directions from location A to selected destination. +
 Format: `dir [INDEX_FROM] [INDEX_TO]`
-
-=== Displaying the MRT map
-Displays the Singapore MRT map. +
-Format: `mrt`
 
 ****
 * Displays the location from `INDEX_FROM` to `INDEX_TO`. The index refers to the index number shown in the last place listing.
