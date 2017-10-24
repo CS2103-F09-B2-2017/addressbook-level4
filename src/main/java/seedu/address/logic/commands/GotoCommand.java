@@ -43,7 +43,7 @@ public class GotoCommand extends Command {
         ReadOnlyPerson locationToGo = lastShownList.get(targetIndex.getZeroBased());
 
         //  Open the Google Maps on BrowserPanel
-        MainWindow.loadURL("https://www.google.com.sg/maps/place/"
+        MainWindow.loadUrl("https://www.google.com.sg/maps/place/"
             + locationToGo.getName().fullName.replaceAll(" ", "+"));
 
         EventsCenter.getInstance().post(new GotoRequestEvent(targetIndex));

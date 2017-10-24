@@ -199,7 +199,7 @@ public class MainWindow extends UiPart<Region> {
         primaryStage.setMinWidth(MIN_WIDTH);
     }
 
-    public static void loadURL(String url) {
+    public static void loadUrl(String url) {
         browserPanel.loadPage(url);
     }
 
