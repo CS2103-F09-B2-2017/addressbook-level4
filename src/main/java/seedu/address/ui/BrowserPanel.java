@@ -44,11 +44,13 @@ public class BrowserPanel extends UiPart<Region> {
     //@@author thanhson16198
     private void loadPlacePage(ReadOnlyPlace place) {
         // Check if the website of the location is left blank
-        if (place.getWebsite().toString().contains("www.-.com"))
+        if (place.getWebsite().toString().contains("www.-.com")) {
             loadPage(GOOGLE_SEARCH_URL_PREFIX + place.getName().fullName.replaceAll(" ", "+")
                     + GOOGLE_SEARCH_URL_SUFFIX);
-        else
+        }
+        else {
             loadPage(place.getWebsite().toString().replaceAll(" ", "+"));
+        }
     }
     //@@author
 
