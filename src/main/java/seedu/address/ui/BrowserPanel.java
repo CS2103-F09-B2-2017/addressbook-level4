@@ -47,8 +47,7 @@ public class BrowserPanel extends UiPart<Region> {
         if (place.getWebsite().toString().contains("www.-.com")) {
             loadPage(GOOGLE_SEARCH_URL_PREFIX + place.getName().fullName.replaceAll(" ", "+")
                     + GOOGLE_SEARCH_URL_SUFFIX);
-        }
-        else {
+        } else {
             loadPage(place.getWebsite().toString().replaceAll(" ", "+"));
         }
     }
