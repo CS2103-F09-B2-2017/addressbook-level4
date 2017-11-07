@@ -46,7 +46,15 @@ public class BrowserPanelTest extends GuiUnitTest {
         URL expectedPlaceUrl = new URL(GOOGLE_SEARCH_URL_PREFIX
                 + ALICE.getName().fullName.replaceAll(" ", "+") + GOOGLE_SEARCH_URL_SUFFIX);
         */
-        URL expectedPlaceUrl = new URL(ALICE.getWebsite().toString().replaceAll(" ", "+"));
+        //@@author thanhson16198
+        URL expectedPlaceUrl;
+        if (ALICE.getWebsite().toString().contains("www.-.com")) {
+            expectedPlaceUrl = new URL(GOOGLE_SEARCH_URL_PREFIX
+                    + ALICE.getName().fullName.replaceAll(" ", "+") + GOOGLE_SEARCH_URL_SUFFIX);
+        } else {
+            expectedPlaceUrl = new URL(ALICE.getWebsite().toString().replaceAll(" ", "+"));
+        }
+        //@@author
         waitUntilBrowserLoaded(browserPanelHandle);
         assertEquals(expectedPlaceUrl, browserPanelHandle.getLoadedUrl());
     }
