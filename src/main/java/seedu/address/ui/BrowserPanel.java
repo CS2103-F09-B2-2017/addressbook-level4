@@ -42,6 +42,9 @@ public class BrowserPanel extends UiPart<Region> {
     }
 
     //@@author thanhson16198
+    /**
+     * Load the url to the `BrowserPanel` in `MainWindow.java`
+     */
     private void loadPlacePage(ReadOnlyPlace place) {
         // Check if the website of the location is left blank
         if (place.getWebsite().toString().contains("www.-.com")) {
