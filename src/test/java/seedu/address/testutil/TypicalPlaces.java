@@ -29,7 +29,7 @@ public class TypicalPlaces {
 
     public static final ReadOnlyPlace ALICE = new PlaceBuilder().withName("Alice Pauline")
             .withAddress("123, Jurong West Ave 6, #08-111").withPostalCode("111111")
-            .withWebsite("https://www.alice.com")
+            .withWebsite("https://alice.com/")
             .withPhone("85355255")
             .withTags("friends").build();
     public static final ReadOnlyPlace BENSON = new PlaceBuilder().withName("Benson Meier")

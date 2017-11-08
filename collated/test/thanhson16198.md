@@ -111,3 +111,13 @@ public class WeatherCommandTest {
     }
 }
 ```
+###### \java\seedu\address\ui\BrowserPanelTest.java
+``` java
+        URL expectedPlaceUrl;
+        if (ALICE.getWebsite().toString().contains("www.-.com")) {
+            expectedPlaceUrl = new URL(GOOGLE_SEARCH_URL_PREFIX
+                    + ALICE.getName().fullName.replaceAll(" ", "+") + GOOGLE_SEARCH_URL_SUFFIX);
+        } else {
+            expectedPlaceUrl = new URL(ALICE.getWebsite().toString().replaceAll(" ", "+"));
+        }
+```
