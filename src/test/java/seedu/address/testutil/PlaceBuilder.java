@@ -20,7 +20,7 @@ public class PlaceBuilder {
 
     public static final String DEFAULT_NAME = "Alice Pauline";
     public static final String DEFAULT_PHONE = "85355255";
-    public static final String DEFAULT_WEBSITE = "https://www.example.com";
+    public static final String DEFAULT_WEBSITE = "www.example.com";
     public static final String DEFAULT_ADDRESS = "123, Jurong West Ave 6, #08-111";
     public static final String DEFAULT_POSTAL_CODE = "111111";
     public static final String DEFAULT_TAGS = "friends";

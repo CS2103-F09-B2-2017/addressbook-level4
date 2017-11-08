@@ -3,63 +3,63 @@
     <places>
         <name>Hans Muster</name>
         <phone isPrivate="false">9482424</phone>
-        <website isPrivate="false">https://www.hans.com</website>
+        <website isPrivate="false">www.hans.com</website>
         <address isPrivate="false">4th street</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Ruth Mueller</name>
         <phone isPrivate="false">87249245</phone>
-        <website isPrivate="false">https://www.ruth.com</website>
+        <website isPrivate="false">www.ruth.com</website>
         <address isPrivate="false">81th street</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Heinz Kurz</name>
         <phone isPrivate="false">95352563</phone>
-        <website isPrivate="false">https://www.heinz.com</website>
+        <website isPrivate="false">www.heinz.com</website>
         <address isPrivate="false">wall street</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Cornelia Meier</name>
         <phone isPrivate="false">87652533</phone>
-        <website isPrivate="false">https://www.cornelia.com</website>
+        <website isPrivate="false">www.cornelia.com</website>
         <address isPrivate="false">10th street</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Werner Meyer</name>
         <phone isPrivate="false">9482224</phone>
-        <website isPrivate="false">https://www.werner.com</website>
+        <website isPrivate="false">www.werner.com</website>
         <address isPrivate="false">michegan ave</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Lydia Kunz</name>
         <phone isPrivate="false">9482427</phone>
-        <website isPrivate="false">https://www.lydia.com</website>
+        <website isPrivate="false">www.lydia.com</website>
         <address isPrivate="false">little tokyo</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Anna Best</name>
         <phone isPrivate="false">9482442</phone>
-        <website isPrivate="false">https://www.annabest.com</website>
+        <website isPrivate="false">www.annabest.com</website>
         <address isPrivate="false">4th street</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Stefan Meier</name>
         <phone isPrivate="false">8482424</phone>
-        <website isPrivate="false">https://www.stefan.com</website>
+        <website isPrivate="false">www.stefan.com</website>
         <address isPrivate="false">little india</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>
     <places>
         <name>Martin Mueller</name>
         <phone isPrivate="false">8482131</phone>
-        <website isPrivate="false">https://www.martin.com</website>
+        <website isPrivate="false">www.martin.com</website>
         <address isPrivate="false">chicago ave</address>
         <postalcode isPrivate="false">123456</postalcode>
     </places>

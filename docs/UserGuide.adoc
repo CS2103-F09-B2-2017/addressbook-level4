@@ -251,7 +251,7 @@ There is no need to save manually.
 == Changes in v1.1
 
 // tag::aung1.1[]
-==== `Logic` component
+=== `Logic` component
 Added a shorthand equivalent alias for each of the individual commands. For example, besides typing `add`, the user can also type `a` to remove all places in the list.
 // end::aung1.1[]
 

@@ -30,15 +30,15 @@ public class CommandTestUtil {
     public static final String VALID_NAME_BOB = "Bob Choo";
     public static final String VALID_PHONE_AMY = "11111111";
     public static final String VALID_PHONE_BOB = "22222222";
-    public static final String VALID_WEBSITE_AMY = "http://www.exampleamy.com";
-    public static final String VALID_WEBSITE_BOB = "http://www.examplebob.com";
+    public static final String VALID_WEBSITE_AMY = "www.exampleamy.com";
+    public static final String VALID_WEBSITE_BOB = "www.examplebob.com";
     public static final String VALID_ADDRESS_AMY = "Block 312, Amy Street 1";
     public static final String VALID_ADDRESS_BOB = "Block 123, Bobby Street 3";
     public static final String VALID_POSTAL_CODE_AMY = "111111";
     public static final String VALID_POSTAL_CODE_BOB = "222222";
     public static final String VALID_TAG_HUSBAND = "husband";
     public static final String VALID_TAG_FRIEND = "friend";
-    public static final String WEBSITE_UNKNOW = "http://www.-.com";
+    public static final String WEBSITE_UNKNOW = "www.-.com";
 
     public static final String NAME_DESC_AMY = " " + PREFIX_NAME + VALID_NAME_AMY;
     public static final String NAME_DESC_BOB = " " + PREFIX_NAME + VALID_NAME_BOB;
@@ -56,8 +56,8 @@ public class CommandTestUtil {
 
     public static final String INVALID_NAME_DESC = " " + PREFIX_NAME + "James&"; // '&' not allowed in names
     public static final String INVALID_PHONE_DESC = " " + PREFIX_PHONE + "911a"; // 'a' not allowed in phones
-    public static final String INVALID_WEBSITE_DESC = " " + PREFIX_WEBSITE + "bobyahoo.com";
-    // missing http://wwww symbol
+    public static final String INVALID_WEBSITE_DESC = " " + PREFIX_WEBSITE + "bobyahoo";
+    // missing wwww symbol
     public static final String INVALID_ADDRESS_DESC = " " + PREFIX_ADDRESS; // empty string not allowed for addresses
     public static final String INVALID_POSTALCODE_DESC = " " + PREFIX_POSTAL_CODE + "12345"; // less than 6 digits
     public static final String INVALID_TAG_DESC = " " + PREFIX_TAG + "hubby*"; // '*' not allowed in tags
@@ -124,6 +124,7 @@ public class CommandTestUtil {
     }
 
     /**
+     *
      * Deletes the first place in {@code model}'s filtered list from {@code model}'s address book.
      */
     public static void deleteFirstPlace(Model model) {
