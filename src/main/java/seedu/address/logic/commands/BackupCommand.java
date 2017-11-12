@@ -13,7 +13,7 @@ import seedu.address.logic.commands.exceptions.CommandException;
 public class BackupCommand extends UndoableCommand {
 
     public static final String COMMAND_WORD = "backup";
-    public static final String MESSAGE_SUCCESS = "A Tourist Book backup has been created!";
+    public static final String MESSAGE_SUCCESS = "A Tourist-book backup has been created!";
 
     @Override
     protected CommandResult executeUndoableCommand() throws CommandException {
