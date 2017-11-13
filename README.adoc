@@ -1,0 +1,69 @@
+= Tourist Book
+ifdef::env-github,env-browser[:relfileprefix: docs/]
+ifdef::env-github,env-browser[:outfilesuffix: .adoc]
+
+https://travis-ci.org/se-edu/addressbook-level4[image:https://travis-ci.org/se-edu/addressbook-level4.svg?branch=master[Build Status]]
+https://ci.appveyor.com/project/damithc/addressbook-level4[image:https://ci.appveyor.com/api/projects/status/3boko2x2vr5cc3w2?svg=true[Build status]]
+https://coveralls.io/github/se-edu/addressbook-level4?branch=master[image:https://coveralls.io/repos/github/se-edu/addressbook-level4/badge.svg?branch=master[Coverage Status]]
+https://www.codacy.com/app/damith/addressbook-level4?utm_source=github.com&utm_medium=referral&utm_content=se-edu/addressbook-level4&utm_campaign=Badge_Grade[image:https://api.codacy.com/project/badge/Grade/fc0b7775cf7f4fdeaf08776f3d8e364a[Codacy Badge]]
+
+ifdef::env-github[]
+image::docs/images/Ui.png[width="600"]
+endif::[]
+
+ifndef::env-github[]
+image::images/Ui.png[width="600"]
+endif::[]
+
+== Catering to Tourists visiting Singapore
+
+This application strives to be the integrated platform where you can view all of Singapore's attractions and Michelin
+starred restaurants without the need to juggle multiple tabs on your web browser.
+
+[.underline]#What separates Tourist-Book from just using a web browser?#
+
+* Optimized as a command-line interface (CLI)
+**  Take advantage of various shortcut keys and commands so you type less.
+
+* All the important details at your fingertips
+** Emergency and useful contacts are just a key-press away `F2` or typing `sos`.
+** Our data is formatted so the place's location, phone number and website is shown on one neat card.
+** Places are tagged with other useful information like type of cuisine or if it is a place for sight-seeing.
+** All the places can be filtered using `find` or `sort`.
+
+* Plan your schedule for the day
+**  `weather` and `psi` helps you decide if you should stay indoors.
+**  `mrt`, the train map to help you plan your journey.
+**  `goto`, shows you where the places are.
+**  `dir`, for directions between places.
+**  Loved a place? Use `bookmark` to make sure you never forget it.
+
+* Helps you even when you're offline
+**  `export` gives you a printable list to take with you.
+
+*Many more features to come in V2.0, so what are you waiting for? Download Tourist-Book and type `help` to get started!*
+
+
+ifdef::env-github[]
+image::docs/images/Singapore_Image.jpg[width="800"]
+endif::[]
+
+ifndef::env-github[]
+image::images/Singapore_Image.jpg[width="800"]
+endif::[]
+
+
+== Site Map
+
+* <<UserGuide#, User Guide>>
+* <<DeveloperGuide#, Developer Guide>>
+* <<AboutUs#, About Us>>
+* <<ContactUs#, Contact Us>>
+
+== Acknowledgements
+
+* Some parts of this sample application were inspired by the excellent http://code.makery.ch/library/javafx-8-tutorial/[Java FX tutorial] by
+_Marco Jakob_.
+* The AddressBook-Level4 project created by SE-EDU initiative at https://github.com/se-edu/[ED-EDU].
+
+== Licence : link:LICENSE[MIT]
