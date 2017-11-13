@@ -253,6 +253,73 @@ code data found in the Tourist-Book to help the tourist search for the direction
 <p>(Pull request <a href="https://github.com/CS2103AUG2017-F09-B2/main/pull/62">#62</a>)</p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="implementation-2"><a class="link" href="#implementation-2">Implementation</a></h4>
+<hr>
+<div class="paragraph">
+<p><mark>Start of Extract [from: Developer Guide]</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="direction-implementation"><a class="link" href="#direction-implementation">Direction Implementation</a></h3>
+<div class="paragraph">
+<p>The underlying principle of direction is to retrieve 2 places from the index given by the user and convert each place&#8217;s
+name and postal code into a usable URL. The URL is then passed to the Ui component, within <code>MainWindow</code> to change the
+URL of the <code>BrowserPanel</code>.</p>
+</div>
+<div class="paragraph">
+<p><code>DirectionCommandParser</code> gets indexes with the help of <code>parseIndexFromPosition</code> in <code>ParserUtil</code>. It
+extracts the first 2 indexes from a given string using zero-based positions 0 and 1.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Direction uses 1 based indexing from the user, index 0 is not used.
+Same index values will be rejected by the parser, and if either index are out
+of bounds, it will throw a <code>CommandExceptionError</code> during execute().
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following is the sequence diagram for <code>dir</code> command<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/DirectionSequenceDiagram.png" alt="DirectionSequenceDiagram" width="800">
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-considerations-2"><a class="link" href="#design-considerations-2">Design Considerations</a></h4>
+<div class="paragraph">
+<p><strong>Aspect:</strong> Implementation of <code>dir</code>. <br>
+<strong>Alternative 1 (current choice)</strong> place&#8217;s name and postal code transformation to URL.<br>
+<strong>Pros:</strong> Least amount of maintenance and takes advantage of browser panel to do more work.<br>
+<strong>Cons:</strong> Command can only work with an internet connection.<br>
+<strong>Alternative 2:</strong> Cache directions from one place to all other places within a attribute of a place.<br>
+<strong>Pros:</strong> Same directions given as google maps and works offline.<br>
+<strong>Cons:</strong> Huge amount of space required (complete graph) and tedious implementation through Google Maps API.<br></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Aspect:</strong> Amount of places user can "chain" for getting directions. <br>
+<strong>Alternative 1 (current choice)</strong> Maximum of 2 places is used, with directions given between them. <br>
+<strong>Pros:</strong> No additional data structure needed to support this, less scope means quicker deployment and less prone to bugs.<br>
+<strong>Cons:</strong> User must use "dir 1 2" then "dir 2 3" to plan their schedule for places 1 2 3.<br>
+<strong>Alternative 2:</strong> Implement a queue structure.<br>
+<strong>Pros:</strong> User can type "dir 1 2 3" to store all the data needed. Use another command like "next_dir" to show directions instead of typing the <code>dir</code> command again.<br>
+<strong>Cons:</strong> Data structure implementation requires extensive test coverage, longer to deploy and needs a limit on how many places can it store.<br></p>
+</div>
+<div class="paragraph">
+<p><mark>End of Extract</mark></p>
+</div>
+<hr>
+</div>
 </div>
 <div class="sect2">
 <h3 id="enhancement-proposed-add-place-attribute-description"><a class="link" href="#enhancement-proposed-add-place-attribute-description">Enhancement Proposed: Add place attribute : "Description"</a></h3>
@@ -291,7 +358,7 @@ on the place list.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-11-12 11:43:19 +08:00
+Last updated 2017-11-13 19:18:17 +08:00
 </div>
 </div>
 </body>
