@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<title>Nguyen Thanh Son - Project Portfolio</title>
+<link rel="stylesheet" href="../stylesheets/gh-pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Nguyen Thanh Son - Project Portfolio</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="project-tourist-book"><a class="link" href="#project-tourist-book">Project: Tourist-Book</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tourist-Book is a desktop tourist attractions application used for teaching Software Engineering principles. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 6 kLoC.</p>
+</div>
+<div class="paragraph">
+<p><strong>Code contributed</strong>: [<a href="https://github.com/CS2103AUG2017-F09-B2/main/blob/master/collated/main/thanhson16198.md">Functional code</a>] [<a href="https://github.com/CS2103AUG2017-F09-B2/main/blob/master/collated/test/thanhson16198.md">Test code</a>]</p>
+</div>
+<div class="sect2">
+<h3 id="enhancement-added-display-real-time-weather-of-singapore"><a class="link" href="#enhancement-added-display-real-time-weather-of-singapore">Enhancement Added: Display real-time Weather of Singapore</a></h3>
+<div class="sect3">
+<h4 id="external-behavior"><a class="link" href="#external-behavior">External behavior</a></h4>
+<hr>
+<div class="paragraph">
+<p><mark>Start of Extract [from: User Guide]</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="displaying-weather-of-singapore"><a class="link" href="#displaying-weather-of-singapore">Displaying Weather of Singapore</a></h3>
+<div class="paragraph">
+<p>Display Weather of Singapore by typing in Command Line <code>weather</code>
+Format: <code>weather</code></p>
+</div>
+<div class="paragraph">
+<p><mark>End of Extract</mark></p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="justification"><a class="link" href="#justification">Justification</a></h4>
+<div class="paragraph">
+<p>Show the current weather of Singapore for tourist&#8217;s convenience.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implementation"><a class="link" href="#implementation">Implementation</a></h4>
+<div class="paragraph">
+<p>For clicking the 'Weather' tab in the <code>MenuBar</code>, or calling the command <code>weather</code>, the <code>handleWeather</code> function is called, by FXML, on <a href="{repoURL}/src/main/java/seedu/address/ui/MainWindow.java"><code>MainWindow.java</code></a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>@FXML
+public void handleWeather() {
+    logger.info("Open a weather forecast for today on BrowerPanel.");
+    browserPanel.loadPage("https://www.accuweather.com/en/sg/singapore/300597/hourly-weather-forecast/300597");
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enhancement-proposed-add-command-code-goto-code"><a class="link" href="#enhancement-proposed-add-command-code-goto-code">Enhancement Proposed: Add command <code>Goto</code></a></h3>
+<div class="sect3">
+<h4 id="external-behavior-2"><a class="link" href="#external-behavior-2">External behavior</a></h4>
+<hr>
+<div class="paragraph">
+<p><mark>Start of Extract [from: User Guide]</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="display-the-location-of-the-place"><a class="link" href="#display-the-location-of-the-place">Display the location of the place</a></h3>
+<div class="paragraph">
+<p>Display the location of the place in Google Map by typing in Command 'goto' followed by the INDEX of the place.<br>
+Format: <code>goto</code> + INDEX (must be positive)<br>
+Examples: <code>goto 1</code><br></p>
+</div>
+<div class="paragraph">
+<p><mark>End of Extract</mark></p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="justification-2"><a class="link" href="#justification-2">Justification</a></h4>
+<div class="paragraph">
+<p>Show the location on Google Map.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="feature-modified-update-the-colors-for-tags"><a class="link" href="#feature-modified-update-the-colors-for-tags">Feature Modified: Update the colors for tags</a></h3>
+<div class="sect3">
+<h4 id="justification-3"><a class="link" href="#justification-3">Justification</a></h4>
+<div class="paragraph">
+<p>Add more pallete colors for tags,  and documentate the Hex colors for easy maintenance.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implementation-2"><a class="link" href="#implementation-2">Implementation</a></h4>
+<div class="paragraph">
+<p>Edit the <code>color</code> array in <a href="{repoURL}/src/main/java/seedu/address/ui/PlaceCard.java"><code>PlaceCard</code></a> to display clearer colors and maintain.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>/**
+     * Names of the hex values in `colors` array:
+     * Format: `HEX VALUE` : `NAME`    (`NAME` would be replaced with a description of the color if not exists)
+     *
+     * 800000 : Maroon
+     * FF0000 : Red
+     * 800080 : Purple
+     * 008000 : Green
+     * 808000 : Olive
+     * FFFF00 : Yellow
+     * 000080 : Navy
+     * D300D3 : A shade of magenta
+     * FB6542 : A medium light shade of red-orange
+     * CC3D00 : A mediam dark shade of red-orange
+     * D55448 : A shade of red
+     * 063852 : A dark shade of cyan-blue
+     * 2D4262 : A medium dark shade of cyan-blue
+     * 07575B : A dark shade of cyan
+     */
+    private static String[] colors = {"#800000", "#FF0000", "#800080",
+        "#008000", "#808000", "#FFFF00", "#000080", "#D300D3",
+        "#FB6542", "#CC3D00", "#D55448", "#063852", "#2D4262", "#07575B"};</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="feature-modified-open-the-website-of-location-when-selected"><a class="link" href="#feature-modified-open-the-website-of-location-when-selected">Feature Modified: Open the website of location when selected</a></h3>
+<div class="sect3">
+<h4 id="justification-4"><a class="link" href="#justification-4">Justification</a></h4>
+<div class="paragraph">
+<p>Open the website of the location on <code>BrowserPanel</code> when a location is selected.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implementation-3"><a class="link" href="#implementation-3">Implementation</a></h4>
+<div class="paragraph">
+<p>Open the website of the location by <code>getWebsite()</code> if the website is available, else search the location, by name, on Google.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>private void loadPlacePage(ReadOnlyPlace place) {
+        if (place.getWebsite().toString().contains("www.-.com"))
+            loadPage(GOOGLE_SEARCH_URL_PREFIX + place.getName().fullName.replaceAll(" ", "+")
+                    + GOOGLE_SEARCH_URL_SUFFIX);
+        else
+            loadPage(place.getWebsite().toString().replaceAll(" ", "+"));
+    }</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2017-11-10 00:16:37 +08:00
+</div>
+</div>
+</body>
+</html>

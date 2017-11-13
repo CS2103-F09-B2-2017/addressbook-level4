@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<title>Chng Zhi Xuan - Project Portfolio</title>
+<link rel="stylesheet" href="../stylesheets/gh-pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Chng Zhi Xuan - Project Portfolio</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="project-tourist-book"><a class="link" href="#project-tourist-book">Project: Tourist-Book</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Code contributed</strong>: [<a href="https://github.com/CS2103AUG2017-F09-B2/main/blob/master/collated/test/Chng-Zhi-Xuan.md">Functional code</a>]
+ [<a href="https://github.com/CS2103AUG2017-F09-B2/main/blob/master/collated/test/Chng-Zhi-Xuan.md">Test code</a>]</p>
+</div>
+<div class="sect2">
+<h3 id="enhancement-added-bookmarking"><a class="link" href="#enhancement-added-bookmarking">Enhancement Added: Bookmarking</a></h3>
+<div class="sect3">
+<h4 id="external-behavior"><a class="link" href="#external-behavior">External behavior</a></h4>
+<hr>
+<div class="paragraph">
+<p><mark>Start of Extract [from: User Guide]</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bookmark-a-place-code-bookmark-code"><a class="link" href="#bookmark-a-place-code-bookmark-code">Bookmark a place: <code>bookmark</code></a></h3>
+<div class="paragraph">
+<p>Adds a bookmark tag to the specified place from the address book.<br>
+Format: <code>bookmark INDEX</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Bookmarks the place at the specified <code>INDEX</code>.</p>
+</li>
+<li>
+<p>The index refers to the index number shown in the most recent listing.</p>
+</li>
+<li>
+<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>list</code><br>
+<code>bookmark 1</code><br>
+Bookmarks the first place in the address book.</p>
+</li>
+<li>
+<p><code>find n/attractions</code><br>
+<code>bookmark 3</code><br>
+Bookmarks the 3rd place in the results of the <code>find</code> command.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="display-bookmarks-code-show_bookmark-code"><a class="link" href="#display-bookmarks-code-show_bookmark-code">Display bookmarks: <code>show_bookmark</code></a></h3>
+<div class="paragraph">
+<p>List all bookmarked places in Tourist Book<br>
+Format: <code>show_bookmark</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="clearing-all-bookmarks-code-clear_bookmark-code"><a class="link" href="#clearing-all-bookmarks-code-clear_bookmark-code">Clearing all bookmarks: <code>clear_bookmark</code></a></h3>
+<div class="paragraph">
+<p>Clears all bookmarks from the address book.<br>
+Format: <code>clear_bookmark</code></p>
+</div>
+<div class="paragraph">
+<p><mark>End of Extract</mark></p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="justification"><a class="link" href="#justification">Justification</a></h4>
+<div class="paragraph">
+<p>Bookmarking was a key feature part of the user story, as the tourist would like to track favourite places.
+Implementation was done via tag manipulation since the Tag class was well suited to support this feature. However,
+tag  manipulation was cumbersome in the old addressbook, only from the edit command which was very slow.</p>
+</div>
+<div class="paragraph">
+<p>My solution has seperate commands to speed up the process of adding/removing a specific tag ("Bookmarked") from each place, by passing
+the need to use the slower edit command.</p>
+</div>
+<div class="paragraph">
+<p>(Pull requests <a href="https://github.com/CS2103AUG2017-F09-B2/main/pull/13">#13</a>, <a href="https://github.com/CS2103AUG2017-F09-B2/main/pull/93">#93</a>)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implementation"><a class="link" href="#implementation">Implementation</a></h4>
+<hr>
+<div class="paragraph">
+<p><mark>Start of Extract [from: Developer Guide]</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bookmark-clear-bookmark-mechanism"><a class="link" href="#bookmark-clear-bookmark-mechanism">Bookmark &amp; Clear Bookmark mechanism</a></h3>
+<div class="paragraph">
+<p>The underlying implementation of <code>Bookmark</code> and <code>Clear Bookmark</code> is tag manipulation in the model component.
+Two methods were added to <code>Model</code> interface to support this feature (<code>addTag</code> and <code>removeAllTags</code>).</p>
+</div>
+<div class="paragraph">
+<p>Both <code>Bookmark</code> and <code>Clear Bookmark</code> extends from <code>UndoableCommand</code> as shown in <strong>Figure 2.3.2</strong> , which allows Undo/Redo by the user.
+Also, <code>Bookmark</code> is an index based command like (<code>delete</code> or <code>edit</code>)<br></p>
+</div>
+<div class="paragraph">
+<p>The following are the sequence diagrams each command<br></p>
+</div>
+<div class="paragraph">
+<p><code>bookmark</code> command</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Bookmarking a place which is already bookmarked will throw <code>DuplicateTagException</code> since <code>addTag</code> can
+be used by other commands or methods.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/BookmarkSequenceDiagram.PNG" alt="BookmarkSequenceDiagram" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p><code>clear_bookmark</code> command</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/ClearBookmarkSequenceDiagram.PNG" alt="ClearBookmarkSequenceDiagram" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Both commands are quite similar, only slightly difference is additional index argument for <code>bookmark</code>, and calling different
+methods in <code>ModelManager</code>.</p>
+</div>
+<div class="sect3">
+<h4 id="design-considerations"><a class="link" href="#design-considerations">Design Considerations</a></h4>
+<div class="paragraph">
+<p><strong>Aspect:</strong> Implementation of <code>bookmark</code> / <code>clear_bookmark</code> <br>
+<strong>Alternative 1 (current choice)</strong> <code>Tag</code> manipulation through methods in <code>ModelManager</code><br>
+<strong>Pros:</strong> Easy to implement over existing <code>Tag</code> class.<br>
+<strong>Cons:</strong> Tags are randomly ordered, bookmark tag position is not consistent in the place list. <br>
+<strong>Alternative 2:</strong> Create a new class and have it as a new attribute in <code>Place</code><br>
+<strong>Pros:</strong> Able to have fixed positioning of bookmark when listing places.<br>
+<strong>Cons:</strong> Tedious to implement, testing has added complexity.<br></p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Aspect:</strong> User experience for <code>bookmark</code> / <code>clear_bookmark</code> <br>
+<strong>Alternative 1 (current choice)</strong> Have 2 dedicated commands for manipulation on single specific tag<br>
+<strong>Pros:</strong> Standardization of "bookmark" tag, user cannot vary the tag for the same purpose E.G ("favourite", "saved", "like").<br>
+<strong>Cons:</strong> Only 1 bookmark "list" for user to put their favourite places.<br>
+<strong>Alternative 2:</strong> A more general command for user to change tags of specific place<br>
+<strong>Pros:</strong> More concise version of <code>edit</code>, allows user to have different bookmark "lists" E.G ("Near_West", "Near_East").<br>
+<strong>Cons:</strong> A general version of <code>clear_bookmark</code> will be <code>remove_tag</code>, which would allow the user to delete important pre-allocated tags in the initial list.<br></p>
+</div>
+<div class="paragraph">
+<p><mark>End of Extract</mark></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enhancement-added-direction-from-place-to-place"><a class="link" href="#enhancement-added-direction-from-place-to-place">Enhancement Added: Direction from place to place</a></h3>
+<div class="sect3">
+<h4 id="external-behavior-2"><a class="link" href="#external-behavior-2">External behavior</a></h4>
+<hr>
+<div class="paragraph">
+<p><mark>Start of Extract [from: User Guide]</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="get-directions-to-selected-destination"><a class="link" href="#get-directions-to-selected-destination">Get directions to selected destination</a></h3>
+<div class="paragraph">
+<p>Displays the directions from location A to selected destination.<br>
+Format: <code>dir [INDEX_FROM] [INDEX_TO]</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Displays the location from <code>INDEX_FROM</code> to <code>INDEX_TO</code>. The index refers to the index number shown in the last place listing.</p>
+</li>
+<li>
+<p>Both fields must be provided.</p>
+</li>
+<li>
+<p>The index <strong>must be a positive integer</strong> &gt;= 1 and within the range of the list shown</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>dir 1 2</code><br>
+Returns the directions from the location at index 1 to index 2 of the places listing.</p>
+</li>
+<li>
+<p><code>dir 4 1</code><br>
+Returns the directions from the location at index 4 to index 1 of the places listing.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><mark>End of Extract</mark></p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="justification-2"><a class="link" href="#justification-2">Justification</a></h4>
+<div class="paragraph">
+<p>Highlighted as a "nice to have" feature in the user story. The usage would be the tourist has a schedule to visit
+several places in a day. It is very likely the tourist would seek direction to get from one listed place to another listed
+place.</p>
+</div>
+<div class="paragraph">
+<p>"dir" command is implemented as a shortcut to manually entering 2 places on Google maps. It uses the name and postal
+code data found in the Tourist-Book to help the tourist search for the direction in the browser panel.</p>
+</div>
+<div class="paragraph">
+<p>(Pull request <a href="https://github.com/CS2103AUG2017-F09-B2/main/pull/62">#62</a>)</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enhancement-proposed-add-place-attribute-description"><a class="link" href="#enhancement-proposed-add-place-attribute-description">Enhancement Proposed: Add place attribute : "Description"</a></h3>
+<div class="paragraph">
+<p>Currently, there isn&#8217;t a short summary on what the various places offer, the tourist would need to select a place and visit
+the its website to find out more. However, the website might load slowly, and would require a few mouse clicks
+to find what is the place about.</p>
+</div>
+<div class="paragraph">
+<p>To alleviate this issue, we can pre-load the description into a new place attribute&lt;optional&gt; and have it display
+on the place list.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="other-contributions"><a class="link" href="#other-contributions">Other contributions</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Refactor 1.9K LoC, from "person" to "places"  (Pull request <a href="https://github.com/CS2103AUG2017-F09-B2/main/pull/44">#44</a>)</p>
+</li>
+<li>
+<p>Added user stories (Pull request <a href="https://github.com/CS2103AUG2017-F09-B2/main/pull/2">#2</a>)</p>
+</li>
+<li>
+<p>Tested for group T09-B1 (Issues raised
+<a href="https://github.com/CS2103AUG2017-T09-B1/main/issues/81">#81</a>,
+<a href="https://github.com/CS2103AUG2017-T09-B1/main/issues/82">#82</a>,
+<a href="https://github.com/CS2103AUG2017-T09-B1/main/issues/83">#83</a>,
+<a href="https://github.com/CS2103AUG2017-T09-B1/main/issues/84">#84</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2017-11-12 11:43:19 +08:00
+</div>
+</div>
+</body>
+</html>
