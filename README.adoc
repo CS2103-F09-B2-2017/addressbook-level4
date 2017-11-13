@@ -8,7 +8,7 @@ https://coveralls.io/github/se-edu/addressbook-level4?branch=master[image:https:
 https://www.codacy.com/app/damith/addressbook-level4?utm_source=github.com&utm_medium=referral&utm_content=se-edu/addressbook-level4&utm_campaign=Badge_Grade[image:https://api.codacy.com/project/badge/Grade/fc0b7775cf7f4fdeaf08776f3d8e364a[Codacy Badge]]
 
 ifdef::env-github[]
-image::docs/images/Ui.png[width="600"]
+image::images/Ui.png[width="600"]
 endif::[]
 
 ifndef::env-github[]
@@ -45,7 +45,7 @@ starred restaurants without the need to juggle multiple tabs on your web browser
 
 
 ifdef::env-github[]
-image::docs/images/Singapore_Image.jpg[width="800"]
+image::images/Singapore_Image.jpg[width="800"]
 endif::[]
 
 ifndef::env-github[]
