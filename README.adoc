@@ -55,10 +55,10 @@ endif::[]
 
 == Site Map
 
-* <<UserGuide.html#, User Guide>>
-* <<DeveloperGuide.html#, Developer Guide>>
-* <<AboutUs.html#, About Us>>
-* <<ContactUs.html#, Contact Us>>
+* <<UserGuide.html, User Guide>>
+* <<DeveloperGuide.html, Developer Guide>>
+* <<AboutUs.html, About Us>>
+* <<ContactUs.html, Contact Us>>
 
 == Acknowledgements
 
